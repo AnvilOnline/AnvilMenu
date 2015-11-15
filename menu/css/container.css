@@ -1,0 +1,40 @@
+@keyframes note-in
+{
+    from { margin-left: -200%; }
+    to { margin-left: 0; }
+}
+
+@keyframes note-out
+{
+    from { margin-left: 0; }
+    to { margin-left: -200%; }
+}
+
+#note
+{
+    display: none;
+    position: absolute;
+    bottom: 2%;
+    min-width: 20%;
+    max-width: 25%;
+
+    padding: 16px;
+    background: #222;
+    border: 2px solid hsla(0, 0%, 100%, 0.2);
+    box-sizing: border-box;
+    color: white;
+    z-index: 9999;
+}
+
+#note #note-title
+{
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+#note #note-info
+{
+    font-size: 1vw;
+    font-weight: 400;
+}

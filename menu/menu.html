@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Default Menu</title>
+        <link href="css/menu.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <label id="players-online">Loading players online...</label>
+            <label id="friends-online">Loading friends online...</label>
+        </header>
+
+        <div id="content">
+            <img id="logo" src="img/logo.png" alt>
+            <ul class="menu">
+                <li onclick="app.onMethodCall('play_mp');">PLAY MULTIPLAYER</li>
+                <li onclick="app.onMethodCall('settings');">SETTINGS</li>
+                <li onclick="app.onMethodCall('credits');">CREDITS</li>
+                <li onclick="app.onMethodCall('quit');">QUIT</li>
+            </ul>
+        </div>
+        <div id="footer">
+            This is a template menu, should not be used in production.
+            <div id="game-version">LOC_VERSION</div>
+        </div>
+    </body>
+</html>

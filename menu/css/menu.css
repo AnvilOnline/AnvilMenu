@@ -1,0 +1,86 @@
+@font-face
+{
+    font-family: "Conduit ITC";
+    src: url("../fonts/Conduit-ITC.woff");
+}
+html
+{
+    background: black;
+    color: #FFFFFF;
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Conduit ITC", sans-serif;
+}
+
+body
+{
+    margin: 0;
+    width: 90%;
+}
+header
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+header label
+{
+    font-size: 1.5vw
+}
+header #players-online
+{
+    float: left;
+}
+
+header #friends-online
+{
+    float: right;
+}
+
+.menu
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu li
+{
+    font-size: 2vw;
+    max-width: 50%;
+}
+.menu li:hover
+{
+    background: rgba(255,255,255,0.2);
+}
+
+#logo
+{
+    width: auto;
+    height: auto;
+    max-width: 75%;
+}
+
+#content
+{
+    position: relative;
+    /*background: green;*/
+}
+
+#footer
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+#footer #game-version
+{
+    display: inline;
+    float: right;
+    margin-left: 5%;
+}
