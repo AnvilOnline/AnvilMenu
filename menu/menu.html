@@ -14,15 +14,21 @@
         <div id="content">
             <img id="logo" src="img/logo.png" alt>
             <ul class="menu">
-                <li onclick="app.onMethodCall('play_mp');">PLAY MULTIPLAYER</li>
-                <li onclick="app.onMethodCall('settings');">SETTINGS</li>
-                <li onclick="app.onMethodCall('credits');">CREDITS</li>
-                <li onclick="app.onMethodCall('quit');">QUIT</li>
+                <li onclick="">PLAY MULTIPLAYER</li>
+                <li onclick="">SETTINGS</li>
+                <li onclick="">CREDITS</li>
+                <li onclick="anvil.Quit();">QUIT</li>
             </ul>
         </div>
         <div id="footer">
             This is a template menu, should not be used in production.
-            <div id="game-version">LOC_VERSION</div>
+            <div id="game-version">
+				Unknown Game Version
+				<script>
+					var s_GameVersionElement = document.getElementById("game-version");
+					s_GameVersionElement.innerHTML = anvil.GetVersion();
+				</script>
+			</div>
         </div>
     </body>
 </html>
